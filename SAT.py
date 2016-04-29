@@ -20,6 +20,9 @@ BG_BUTTON = "black"
 HOVER_BUTTON = "yellow"
 DP_TEXT_BUTTON = "white"
 
+# Default Music Directory
+DEFAULT_MUSIC_DIRECTORY = '/home/pi/Music/*'
+
 # Variables the main code needs access to
 global about
 global app
@@ -1908,7 +1911,7 @@ class SongSearch:
         if 'f' in inputs:
             self.filePath = filePath
         else:
-            self.filePath = '/home/pi/Music/*'
+            self.filePath = DEFAULT_MUSIC_DIRECTORY
         if 'a' in inputs:
             self.artist = artist
         else:
